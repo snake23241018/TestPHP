@@ -3,14 +3,11 @@
     < title >< /title >
 < /head >
 < body >
-<form action="Array.php" method="post" >
-Введите число <input type="text" name="num" value="" /><br/>
-Ваш комментарий:<br/>
-<textarea name="v" ></textarea><br/>
-<input type="submit" name="bsubmit" value="Отправить" />
+<form method="get" action="Array.php">
+    <input type="text" name="some_var" value="" />
+    <input type="submit" value="Send it!" />
 </form>
     <?php
-echo ($_POST["num"]."<br>");// вывод переменной из формы
-echo ($_POST["v"]);
+echo ($_POST["some_var"]."<br>");// вывод переменной из формы
 < /body >
 < /html >
